@@ -1,0 +1,166 @@
+// ctrl + j: move up
+// ctrl + k: move down
+// ctrl + h: move left
+// ctrl + l: move right
+// ctrl+shift+ j/k/h/l: mark text up/left/down/right
+// ctrl+cmd+/k: move current line / select text up/left/down/right
+// shift+alt+l: mark a word in right side
+// shift+alt+h: mark a word in left side
+// shift+cmd+h: mark in start line
+// shift+cmd+l: mark in end line
+// cmd+l: jump to end of the line
+// cmd+h: jump to start of the line
+// cmd+j: jump to top
+// cmd+k: jump to bottom
+// cmd+shift+k: mark from current cursor to bottom
+// cmd+shift+j: mark from current cursor to top
+// ctrl+x: delete left character
+// alt+ctrl+k: delete current line
+// alt+ctrl+h: jump to left of a word
+// alt+ctrl+l: jump to right of a word
+// alt+ctrl+j: move up 10 lines
+// alt+ctrl+k: move down 10 lines
+// ctrl+u: add cursor to above line
+// ctrl+o: add cursor to down line
+[
+  {
+    "key": "ctrl+j",
+    "command": "cursorUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "cursorDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "cursorLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "cursorRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "cursorUpSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "cursorDownSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "cursorLeftSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "cursorRightSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+cmd+j",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+cmd+k",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+l",
+    "command": "cursorWordEndRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+h",
+    "command": "cursorWordLeftSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "cursorEndSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+h",
+    "command": "cursorHomeSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+l",
+    "command": "cursorEnd",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+h",
+    "command": "cursorHome",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+j",
+    "command": "cursorTop",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+k",
+    "command": "cursorBottom",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "cursorBottomSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "cursorTopSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+ctrl+x",
+    "command": "editor.action.deleteLines",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+x",
+    "command": "deleteLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+ctrl+k",
+    "command": "lineJumper.moveDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+ctrl+j",
+    "command": "lineJumper.moveUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+ctrl+l",
+    "command": "cursorWordPartRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+ctrl+h",
+    "command": "cursorWordPartLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+]
