@@ -24,7 +24,7 @@
 // ctrl+o: add cursor to down line
 [
   {
-    "key": "ctrl+j",
+    "key": "ctrl+i",
     "command": "cursorUp",
     "when": "textInputFocus"
   },
@@ -34,7 +34,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+h",
+    "key": "ctrl+j",
     "command": "cursorLeft",
     "when": "textInputFocus"
   },
@@ -44,7 +44,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+shift+j",
+    "key": "ctrl+shift+i",
     "command": "cursorUpSelect",
     "when": "editorTextFocus"
   },
@@ -54,7 +54,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+h",
+    "key": "ctrl+shift+j",
     "command": "cursorLeftSelect",
     "when": "editorTextFocus"
   },
@@ -64,7 +64,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+cmd+j",
+    "key": "ctrl+cmd+i",
     "command": "editor.action.moveLinesUpAction",
     "when": "editorTextFocus"
   },
@@ -79,7 +79,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "shift+alt+h",
+    "key": "shift+alt+j",
     "command": "cursorWordLeftSelect",
     "when": "textInputFocus"
   },
@@ -89,7 +89,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "shift+cmd+h",
+    "key": "shift+cmd+j",
     "command": "cursorHomeSelect",
     "when": "textInputFocus"
   },
@@ -99,12 +99,12 @@
     "when": "textInputFocus"
   },
   {
-    "key": "cmd+h",
+    "key": "cmd+j",
     "command": "cursorHome",
     "when": "textInputFocus"
   },
   {
-    "key": "cmd+j",
+    "key": "cmd+i",
     "command": "cursorTop",
     "when": "textInputFocus"
   },
@@ -113,13 +113,13 @@
     "command": "cursorBottom",
     "when": "textInputFocus"
   },
+  // {
+  //   "key": "shift+cmd+k",
+  //   "command": "cursorBottomSelect",
+  //   "when": "textInputFocus"
+  // },
   {
-    "key": "shift+cmd+k",
-    "command": "cursorBottomSelect",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "shift+cmd+j",
+    "key": "shift+cmd+i",
     "command": "cursorTopSelect",
     "when": "textInputFocus"
   },
@@ -139,7 +139,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "alt+ctrl+j",
+    "key": "alt+ctrl+i",
     "command": "lineJumper.moveUp",
     "when": "editorTextFocus"
   },
@@ -149,7 +149,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "alt+ctrl+h",
+    "key": "alt+ctrl+j",
     "command": "cursorWordPartLeft",
     "when": "textInputFocus"
   },
@@ -162,5 +162,15 @@
     "key": "ctrl+o",
     "command": "editor.action.insertCursorBelow",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
 ]
