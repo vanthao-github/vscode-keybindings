@@ -22,6 +22,10 @@
 // alt+ctrl+k: move down 10 lines
 // ctrl+u: add cursor to above line
 // ctrl+o: add cursor to down line
+// cmd + enter: add new line right below current line
+// cmd + shift + enter: add new line right aboce current line
+// cmd + n : create new file - need to install advance create file extension
+// ctrl + z: delete right
 [
   {
     "key": "ctrl+i",
@@ -173,4 +177,18 @@
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
+  // install advanve create file extension
+  {
+    "key": "cmd+n",
+    "command": "extension.advancedNewFile"
+  },
+  {
+    "key": "alt+cmd+n",
+    "command": "-extension.advancedNewFile"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "deleteRight",
+    "when": "textInputFocus"
+  }
 ]
