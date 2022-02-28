@@ -26,6 +26,7 @@
 // cmd + shift + enter: add new line right aboce current line
 // cmd + n : create new file - need to install advance create file extension
 // ctrl + z: delete right
+//  alt + shift: go to defination
 [
   {
     "key": "ctrl+i",
@@ -190,5 +191,10 @@
     "key": "ctrl+z",
     "command": "deleteRight",
     "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+d",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   }
 ]
