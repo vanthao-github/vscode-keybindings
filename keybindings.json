@@ -178,7 +178,7 @@
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
-  // install advanve create file extension
+  // install advance create file extension
   {
     "key": "cmd+n",
     "command": "extension.advancedNewFile"
